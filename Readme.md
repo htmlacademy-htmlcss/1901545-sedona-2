@@ -2,7 +2,7 @@
 
 * Студент: [Karina Ponomareva](https://up.htmlacademy.ru/htmlcss-individual/2/user/1901545).
 * Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
-
+* Сайт: [Мой проект Седона](https://karina-blossom.github.io/1901545-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
