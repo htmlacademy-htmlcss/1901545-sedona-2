@@ -31,7 +31,7 @@ html {
   overflow: hidden;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -108,9 +108,12 @@ body {
 }
 
 .navigation a {
-  text-decoration: none;
-}
+text-decoration: none;
 
+}
+.navigation ul {
+  list-style-type: none;
+}
 .navigation-link {
   font-size: 20px;
   line-height: 24px;
@@ -134,7 +137,7 @@ body {
   color: #000000;
   background-color: #8babb8;
   background-image: url(../images/background/hero-background.jpg);
-  background-size: 100% auto,cover;
+  background-size: 100% auto, cover;
   background-repeat: no-repeat;
 }
 
@@ -176,10 +179,10 @@ body {
 
 .book-search {
   text-align: center;
-  padding: 96px 306px ;
+  padding: 96px 306px;
 }
 
-.book-button{
+.book-button {
   font-size: 20px;
   line-height: 36px;
 }
@@ -211,11 +214,15 @@ body {
   line-height: 36px;
 }
 
-.pagination-item{
-  font-size: 20px;
-  line-height: 36px;
+.subscribe-background .subscribe-title {
+  color: #ffffff
 }
-.contact-phone{
+
+.subscribe-background .subscribe-description {
+  color: #ffffff;
+}
+
+.contact-phone {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
@@ -223,30 +230,24 @@ body {
   color: #000000;
 }
 
-.inner-header-title {
- font-size: 60px;
- line-height: 78px;
- font-weight: 700;
-}
-
-.subscribe-background .subscribe-title {
-  color:#ffffff
-}
-
-.subscribe-background .subscribe-description {
-  color:#ffffff;
-}
 .breadcrumbs {
- color: #ffffff;
- list-style-type: none;
+  color: #ffffff;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
-  color:inherit;
+  color: inherit;
   text-decoration: none;
 }
 
-.hotels-filter{
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.hotels-filter {
   padding-top: 35px;
   padding-right: 70px;
   padding-bottom: 70px;
@@ -254,17 +255,23 @@ body {
   color: #ffffff;
   background-color: #3F5E72;
   background-image: url(../images/background/filter-background.jpg);
-  background-size: 100% auto,cover;
+  background-size: 100% auto, cover;
   background-repeat: no-repeat
+}
+.layout-list {
+  list-style-type: none;
 }
 
 .filters-title {
- font-size: 20px;
- line-height: 24px;
- font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
 
 }
 
+.hotels-list{
+  list-style-type: none;
+}
 .card-rating {
   font-size: 16px;
   line-height: 20px;
@@ -272,4 +279,16 @@ body {
   color: #333333;
   text-transform: uppercase;
   ;
+}
+
+.social-list {
+  list-style-type: none;
+}
+.pagination-item {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.pagination-list {
+  list-style-type: none;
 }
