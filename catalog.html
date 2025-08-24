@@ -54,25 +54,25 @@
             <a class="breadcrumbs-link" aria-current="page">Гостиницы</a>
           </li>
         </ol>
-      <section class="facilities-filter" data-test="filter>
+      <section class="facilities-filter" data-test="filter">
         <h2 class="visually-hidden">Фильтры выбора проживания</h2>
         <form class="filters" action="https://echo.htmlacademy.ru/" method="GET">
           <fieldset class="filters-group">
             <legend class="filters-title">Инфраструктура:</legend>
             <ul class="filters-list">
-              <li class="filetrs-item">
+              <li class="filters-item">
                 <label class="control" for="pool">
                   <input class="control-input" type="checkbox" name="pool" id="pool" checked>
                   Бассеин
                 </label>
               </li>
-              <li class="filetrs-item">
+              <li class="filters-item">
                 <label class="control" for="parking">
                   <input class="control-input" type="checkbox" name="parking" id="parking" checked>
                   Парковка
                 </label>
               </li>
-              <li class="filetrs-item">
+              <li class="filters-item">
                 <label class="control" for="Wi-Fi">
                   <input class="control-input" type="checkbox" name="Wi-Fi" id="Wi-Fi">
                   Wi-Fi
@@ -83,19 +83,19 @@
           <fieldset class="filters-group">
             <legend class="filters-title">Тип жилья:</legend>
             <ul class="filters-list">
-              <li class="filetrs-item">
+              <li class="filters-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="accommodation-type" value="hotel" checked>
                   Гостиницы
                 </label>
               </li>
-              <li class="filetrs-item">
+              <li class="filters-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="accommodation-type" value="motel">
                   Мотель
                 </label>
               </li>
-              <li class="filetrs-item">
+              <li class="filters-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="accommodation-type" value="apartment">
                   Апартаменты
@@ -297,7 +297,7 @@
         <p class="description subscribe-description">Только полезная информация и никакого спама, честное бойскаутское</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="POST">
           <label class="visually-hidden" for="subscription-form">Укажите Ваш e-mail</label>
-          <input class="field" type="email" name="subscription-form" id="subscription-form" placeholder="Ваш e-mail"
+          <input class="field subscribe-field" type="email" name="subscription-form" id="subscription-form" placeholder="Ваш e-mail"
             required>
           <button class="subscribe-button button button-blue" type="submit">Подписаться</button>
         </form>
