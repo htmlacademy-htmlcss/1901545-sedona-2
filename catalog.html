@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    <div class="page-container">
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -38,10 +39,10 @@
             </a>
           </li>
         </ul>
-      </nav>
       <a class="header-button button button-brown" href="#">Хочу сюда!</a>
+      </nav>
     </header>
-    <main class="main-inner" data-test="main">
+    <main class="main-inner main-container" data-test="main">
        <section class="hotels-filter">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs">
@@ -57,6 +58,7 @@
       <section class="facilities-filter" data-test="filter">
         <h2 class="visually-hidden">Фильтры выбора проживания</h2>
         <form class="filters" action="https://echo.htmlacademy.ru/" method="GET">
+          <div class="filters-side">
           <fieldset class="filters-group">
             <legend class="filters-title">Инфраструктура:</legend>
             <ul class="filters-list">
@@ -103,6 +105,9 @@
               </li>
             </ul>
           </fieldset>
+          </div>
+
+
           <fieldset class="filters-group">
             <legend class="filters-title">Стоимость, ₽: </legend>
             <label class="range-control" for="min-price">
@@ -113,19 +118,19 @@
               <input class="range-input" type="number" id="max-price" name="max-price" min="1" max="9000" value="9000">
               До
             </label>
-            <input class="range-input" type="range" min="0" max="9000" value="6000">
           </fieldset>
           <button class="filters-button button button-blue" type="submit">Применить</button>
           <button class="filters-button button button-transparent" type="reset">Сбросить</button>
         </form>
         </section>
-      </section>
+        </section>
+
       <section class="hotels" data-test="catalog">
         <h2 class="visually-hidden">Список найденых отелей</h2>
         <header class="hotels-result">
           <b class=" title hotel-result-search">Найдено гостиниц: <span>38</span></b>
 
-          <div class="sorting">
+          <div class="sorting-">
             <select class="sorting-select" name="sorting" aria-label="Сортировка">
               <option value="cheap" selected>Сначала дешёвые</option>
               <option value="popular">Сначала популярные</option>
@@ -252,39 +257,40 @@
         <nav class="hotels-pagination" aria-label="Пагинация">
           <ol class="pagination-list">
             <li class="pagination-item">
-              <a class="pagination-link pagination button button-grey" aria-current="page" title="Текущая страница">
+              <a class="pagination-link button-grey" aria-current="page" title="Текущая страница">
                 <span class="visually-hidden">Текущая страница</span>
                 1
               </a>
             </li>
 
             <li class="pagination-item">
-              <a class="pagination-link button button-blue" href="#">
+              <a class="pagination-link button-blue" href="#">
                 <span class="visually-hidden">Страница под номером</span>
                 2
               </a>
             </li>
 
             <li class="pagination-item">
-              <a class="pagination-link button button-blue" href="#">
+              <a class="pagination-link  button-blue" href="#">
                 <span class="visually-hidden">Страница под номером</span>
                 3
               </a>
             </li>
 
             <li class="pagination-item">
-              <a class="pagination-link button button-blue" href="#">
+              <a class="pagination-link button-blue" href="#">
                 <span class="visually-hidden">Страница под номером</span>
                 4
               </a>
             </li>
 
             <li class="pagination-item">
-              <button class="pagination-button" type="button" aria-label="Показать следующие страницы">...</button>
+              <span class="visually-hidden">Показать следующие страницы</span>
+              ...
             </li>
 
             <li class="pagination-item">
-              <a class="pagination-link button button-blue" href="#">
+              <a class="pagination-link button-blue" href="#">
                 <span class="visually-hidden">Страница под номером</span>
                 10
               </a>
@@ -338,6 +344,6 @@
         </a>
       </section>
     </footer>
+  </div>
   </body>
-
 </html>
