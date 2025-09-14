@@ -44,10 +44,11 @@
     </header>
     <main class="main-inner main-container" data-test="main">
        <section class="hotels-filter">
+        <header class="hotels-filter-navigation">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная
+            <a class="breadcrumbs-link" href="index.html">
               <span class="visually-hidden">Переход на главную</span>
             </a>
           </li>
@@ -55,11 +56,11 @@
             <a class="breadcrumbs-link" aria-current="page">Гостиницы</a>
           </li>
         </ol>
+        </header>
       <section class="facilities-filter" data-test="filter">
         <h2 class="visually-hidden">Фильтры выбора проживания</h2>
         <form class="filters" action="https://echo.htmlacademy.ru/" method="GET">
-          <div class="filters-side">
-          <fieldset class="filters-group">
+          <fieldset class="filters-group filters-group-infrastructure">
             <legend class="filters-title">Инфраструктура:</legend>
             <ul class="filters-list">
               <li class="filters-item">
@@ -82,8 +83,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filters-group">
-            <legend class="filters-title">Тип жилья:</legend>
+          <fieldset class="filters-group filters-group-hotels">
+            <legend class="filters-title">Тип Жилья:</legend>
             <ul class="filters-list">
               <li class="filters-item">
                 <label class="control">
@@ -105,22 +106,24 @@
               </li>
             </ul>
           </fieldset>
-          </div>
 
-
-          <fieldset class="filters-group">
+          <fieldset class="filters-group filters-group-width">
             <legend class="filters-title">Стоимость, ₽: </legend>
-            <label class="range-control" for="min-price">
-              <input class="range-input" type="number" id="min-price" name="min-price" min="0" max="8999" value="0">
-              От
+            <div class="filters-range-wrapper">
+            <label class="price-from" for="min-price">
+              <span class="range-control price-from">от</span>
+              <input class="range-input" type="number" id="min-price" name="min-price" min="0" max="9000" value="0" placeholder="от"required>
             </label>
-            <label class="range-control" for="max-price">
-              <input class="range-input" type="number" id="max-price" name="max-price" min="1" max="9000" value="9000">
-              До
+            <label class="price-to" for="max-price">
+              <span class="range-control price-to">до</span>
+              <input class="range-input" type="number" id="max-price" name="max-price" min="1" max="9000" value="9000" placeholder="до" required>
             </label>
+            </div>
           </fieldset>
+          <div class="filters-button-wrapper">
           <button class="filters-button button button-blue" type="submit">Применить</button>
           <button class="filters-button button button-transparent" type="reset">Сбросить</button>
+          </div>
         </form>
         </section>
         </section>
@@ -128,9 +131,8 @@
       <section class="hotels" data-test="catalog">
         <h2 class="visually-hidden">Список найденых отелей</h2>
         <header class="hotels-result">
-          <b class=" title hotel-result-search">Найдено гостиниц: <span>38</span></b>
-
-          <div class="sorting-">
+          <b class="title hotel-result-search">Найдено гостиниц: <span>38</span></b>
+          <div class="sorting">
             <select class="sorting-select" name="sorting" aria-label="Сортировка">
               <option value="cheap" selected>Сначала дешёвые</option>
               <option value="popular">Сначала популярные</option>
@@ -257,7 +259,7 @@
         <nav class="hotels-pagination" aria-label="Пагинация">
           <ol class="pagination-list">
             <li class="pagination-item">
-              <a class="pagination-link button-grey" aria-current="page" title="Текущая страница">
+              <a class="pagination-link pagination-link-active" aria-current="page" title="Текущая страница">
                 <span class="visually-hidden">Текущая страница</span>
                 1
               </a>
@@ -285,8 +287,9 @@
             </li>
 
             <li class="pagination-item">
-              <span class="visually-hidden">Показать следующие страницы</span>
+              <button class="pugination-button button" type="button">
               ...
+              </button>
             </li>
 
             <li class="pagination-item">
