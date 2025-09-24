@@ -46,16 +46,22 @@
         <section class="hotels-filter">
           <header class="hotels-filter-navigation">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
-            <ol class="breadcrumbs">
+            <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link breadcrumbs-home-icon" href="index.html">
+                <a class="breadcrumbs-link" href="index.html">
                   <span class="visually-hidden">Переход на главную</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" aria-hidden="true"
+                    focusable="false">
+                    <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
+                    <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
+                  </svg>
+                  </svg>
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" aria-current="page">Гостиницы</a>
+                <a class="breadcrumbs-link" aria-current="page">Гостиница</a>
               </li>
-            </ol>
+            </ul>
           </header>
           <section class="facilities-filter" data-test="filter">
             <h2 class="visually-hidden">Фильтры выбора проживания</h2>
@@ -89,7 +95,7 @@
                   <li class="filters-item">
                     <label class="control">
                       <input class="control-input" type="radio" name="accommodation-type" value="hotel" checked>
-                      Гостиницы
+                      Гостиница
                     </label>
                   </li>
                   <li class="filters-item">
@@ -110,17 +116,27 @@
               <fieldset class="filters-group filters-group-width">
                 <legend class="filters-title">Стоимость, ₽:</legend>
                 <div class="filters-range-wrapper">
-                  <label class="filters-range-control" for="min-price">
-                    <input class="range-input" type="number" id="min-price" name="min-price" min="0" max="9000"
-                      value="0">
-                    <span>от</span>
-                  </label>
-                  <label class="filters-range-control" for="max-price">
-                    <input class="range-input" type="number" id="max-price" name="max-price" min="1" max="9000"
-                      value="9000">
-                    <span>до</span>
-                  </label>
-                </div>
+                  <div class="range-control-wrapper">
+                    <label class="filters-range-control" for="min-price">
+                      <input class="range-input" type="number" id="min-price" name="min-price" min="0" max="9000"
+                        value="0">
+                       <span class="range-text">от</span>
+                    </label>
+                    <label class="filters-range-control" for="max-price">
+                      <input class="range-input" type="number" id="max-price" name="max-price" min="1" max="9000"
+                        value="9000">
+                        <span class="range-text">до</span>
+                    </label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
               </fieldset>
               <div class="filters-button-wrapper">
                 <button class="filters-button button button-blue" type="submit">Применить</button>
@@ -179,8 +195,12 @@
                 </div>
 
                 <div class="card-qualification">
-                  <span class="card-stars" data-star="4">
+                  <span class="card-stars">
                     <span class="visually-hidden">Четырёхзвёздочный отель</span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
                   </span>
                   <p class="card-rating">Рейтинг:<span>8,5</span></p>
                 </div>
@@ -204,8 +224,12 @@
                 </div>
 
                 <div class="card-qualification">
-                  <span class="card-stars" data-star="4">
+                  <span class="card-stars">
                     <span class="visually-hidden">Четырёхзвёздочный отель</span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
                   </span>
                   <p class="card-rating">Рейтинг: <span>9,2</span></p>
                 </div>
@@ -229,8 +253,11 @@
                 </div>
 
                 <div class="card-qualification">
-                  <span class="card-stars" data-star="3">
+                  <span class="card-stars">
                     <span class="visually-hidden">Трехзвездочный отель</span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
                   </span>
                   <p class="card-rating">Рейтинг: <span>6,9</span></p>
                 </div>
@@ -254,8 +281,10 @@
                 </div>
 
                 <div class="card-qualification">
-                  <span class="card-stars" data-star="4">
+                  <span class="card-stars">
                     <span class="visually-hidden">Двухзвездочный отель</span>
+                    <span class="star"></span>
+                    <span class="star"></span>
                   </span>
                   <p class="card-rating">Рейтинг: <span>5,0</span></p>
                 </div>
