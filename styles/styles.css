@@ -344,6 +344,7 @@ body {
 
 .header-button {
   min-width: 160px;
+  max-width: 180px;
   align-self: center;
   padding: 8px 34px;
   margin: 0;
@@ -356,34 +357,32 @@ body {
   flex-wrap: wrap;
   align-items: center;
   min-width: 88px;
+  max-width: 134px;
 }
 
 .navigation-user-link {
-  position: relative;
-  display: block;
+  display: flex;
   color: #000000;
-  padding: 22px 12px;
+  justify-content: center;
+  align-items: center;
   width: 44px;
-}
-
-.navigation-user-link:active {
-  opacity: 0.3;
+  height: 64px;
 }
 
 .navigation-user-link:hover {
-  opacity: 0.6;
+  color: #756157;
 }
 
-.navigation-user-link-search {
-  background-image: url("../images/icons/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.navigation-user-link:focus-visible {
+  color: #756157;
+}
+
+.navigation-user-link:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-user-link-like {
-  background-image: url("../images/icons/heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
 }
 
 .notification-badge {
@@ -393,12 +392,11 @@ body {
   align-items: center;
   height: 20px;
   width: 20px;
-  top: 0;
-  right: 3px;
+  top: 11px;
+  right: 4px;
   font-size: 10px;
   line-height: 10px;
   font-weight: 400;
-
   color: #ffffff;
   background-color: #7db54f;
   border-radius: 50%;
@@ -649,7 +647,7 @@ body {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 4px;
   border: none;
-  padding: 14px 20px;
+  padding: 16px 20px;
   cursor: pointer;
 }
 
@@ -707,7 +705,7 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  padding: 5px 0;
+  padding: 3px 0;
   margin: 0;
   max-width: 142px;
 }
@@ -772,7 +770,7 @@ body {
 
 .creator-link {
   display: block;
-  padding: 9px 0 0 0;
+  padding: 7px 0 0 0;
   color: #000000;
 }
 
@@ -887,12 +885,17 @@ body {
   padding: 50px 70px 60px 70px;
 }
 
+.layout-item:not(:last-of-type) {
+  margin-right: 8px;
+}
+
 .layout-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  padding: 0 0 0 70px;
-  margin: 0;
+  padding: 0;
+  margin: 0 0 0 70px;
+  max-width: 170px;
 }
 
 .layout-link {
@@ -924,10 +927,6 @@ body {
 
 .layout-link:active {
   border: 2px solid #000000;
-}
-
-.layout-item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .layout-item-current {
@@ -969,7 +968,7 @@ body {
 }
 
 .filters-group-width {
-  margin: 0 70px 0 0;
+  margin: 0 68px 0 0;
   width: 288px;
 }
 
@@ -1044,7 +1043,7 @@ body {
 }
 
 @supports not selector(:focus-visible) {
-  .range-inputt:focus {
+  .range-input:focus {
     outline: 3px solid #83b3d3;
     outline-offset: 0;
     border-radius: 4px 0 0 4px;
