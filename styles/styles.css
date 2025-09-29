@@ -327,7 +327,6 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-
 .navigation-link-current {
   position: relative;
   pointer-events: none;
@@ -606,7 +605,6 @@ body {
   margin: 0 auto;
   padding: 8px 50px;
 }
-
 
 .subscribe {
   padding: 96px 258px 104px 258px;
@@ -1717,7 +1715,6 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-
 
 .tooltip-content {
   position: absolute;
