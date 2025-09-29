@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Седона.Городок в Аризоне. </title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon/favicon.png" sizes="32x32">
   </head>
 
   <body>
@@ -55,11 +57,10 @@
                     <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
                     <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
                   </svg>
-                  </svg>
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" aria-current="page">Гостиница</a>
+                <a class="breadcrumbs-link breadcrumbs-link-active " aria-current="page">Гостиницы</a>
               </li>
             </ul>
           </header>
@@ -120,12 +121,12 @@
                     <label class="filters-range-control" for="min-price">
                       <input class="range-input" type="number" id="min-price" name="min-price" min="0" max="9000"
                         value="0">
-                       <span class="range-text">от</span>
+                      <span class="range-text">от</span>
                     </label>
                     <label class="filters-range-control" for="max-price">
                       <input class="range-input" type="number" id="max-price" name="max-price" min="1" max="9000"
                         value="9000">
-                        <span class="range-text">до</span>
+                      <span class="range-text">до</span>
                     </label>
                   </div>
                   <div class="range-scale">
@@ -137,6 +138,8 @@
                         <span class="visually-hidden">Изменить максимальную цену</span>
                       </button>
                     </div>
+                  </div>
+                </div>
               </fieldset>
               <div class="filters-button-wrapper">
                 <button class="filters-button button button-blue" type="submit">Применить</button>
@@ -159,17 +162,17 @@
             </div>
             <ul class="layout-list">
               <li class="layout-item">
-                <a class="layout-link layout-link-view-puzzle layout-item-current" href="#">
+                <a class="layout-link layout-link-view-puzzle layout-item-current" href="catalog.html?view=tile">
                   <span class="visually-hidden">Плитка</span>
                 </a>
               </li>
               <li class="layout-item">
-                <a class="layout-link layout-link-view-rectangle" href="#">
+                <a class="layout-link layout-link-view-rectangle" href="catalog.html?view=card">
                   <span class="visually-hidden">Карточки</span>
                 </a>
               </li>
               <li class="layout-item ">
-                <a class="layout-link layout-link-view-lines" href="#">
+                <a class="layout-link layout-link-view-lines" href="catalog.html?view=list">
                   <span class="visually-hidden">Список</span>
                 </a>
               </li>
@@ -178,7 +181,7 @@
 
           <ul class="hotels-list">
             <li class="hotels-list-item">
-              <article class="card">
+              <article class="card-break-word">
                 <img class="card-img" src="images/hotels/hotel-amara.jpg" width="300" height="212"
                   alt="Звёздное небо,среди гор.">
                 <h3 class="card-title">Amara Resort & Spa</h3>
@@ -187,7 +190,7 @@
                   <dt class="visually-hidden">Тип жилья</dt>
                   <dd class="card-text">Гостиница</dd>
                   <dt class="visually-hidden">Цена</dt>
-                  <dd class="card-text">От 4000 ₽</dd>
+                  <dd class="card-price">От 4000 ₽</dd>
                 </dl>
                 <div class="card-administration">
                   <a class="card-administration-button button button-brown" href="#">Подробнее</a>
@@ -207,7 +210,7 @@
               </article>
             </li>
             <li class="hotels-list-item">
-              <article class="card">
+              <article class="card-break-word">
                 <img class="card-img" src="images/hotels/hotel-villas.jpg" width="300" height="212"
                   alt="Закат с видом на горы.">
                 <h3 class="card-title">Villas at Poco Diablo</h3>
@@ -216,7 +219,7 @@
                   <dt class="visually-hidden">Тип жилья</dt>
                   <dd class="card-text">Гостиница</dd>
                   <dt class="visually-hidden">Цена</dt>
-                  <dd class="card-text">От 5000 ₽</dd>
+                  <dd class="card-price">От 5000 ₽</dd>
                 </dl>
                 <div class="card-administration">
                   <a class="card-administration-button button button-brown" href="#">Подробнее</a>
@@ -236,7 +239,7 @@
               </article>
             </li>
             <li class="hotels-list-item">
-              <article class="card">
+              <article class="card-break-word">
                 <img class="card-img" src="images/hotels/hotel-desert.jpg" width="300" height="212"
                   alt="Утро с видом на величественные горы.">
                 <h3 class="card-title">Desert Quail Inn</h3>
@@ -245,7 +248,7 @@
                   <dt class="visually-hidden">Тип жилья</dt>
                   <dd class="card-text">Гостиница</dd>
                   <dt class="visually-hidden">Цена</dt>
-                  <dd class="card-text">От 2500 ₽</dd>
+                  <dd class="card-price">От 2500 ₽</dd>
                 </dl>
                 <div class="card-administration">
                   <a class="card-administration-button button button-brown" href="#">Подробнее</a>
@@ -264,7 +267,7 @@
               </article>
             </li>
             <li class="hotels-list-item">
-              <article class="card">
+              <article class="card-break-word">
                 <img class="card-img" src="images/hotels/hotel-greentree.jpg" width="300" height="212"
                   alt="Горы на фоне звезд.">
                 <h3 class="card-title">GreenTree Inn</h3>
@@ -273,7 +276,7 @@
                   <dt class="visually-hidden">Тип жилья</dt>
                   <dd class="card-text">Гостиница</dd>
                   <dt class="visually-hidden">Цена</dt>
-                  <dd class="card-text">От 1500 ₽</dd>
+                  <dd class="card-price">От 1500 ₽</dd>
                 </dl>
                 <div class="card-administration">
                   <a class="card-administration-button button button-brown" href="#">Подробнее</a>
@@ -322,7 +325,7 @@
               </li>
 
               <li class="pagination-item">
-                <button class="pagination-button button" type="button">
+                <button class="pagination-button button button-more" type="button">
                   ...
                 </button>
               </li>
